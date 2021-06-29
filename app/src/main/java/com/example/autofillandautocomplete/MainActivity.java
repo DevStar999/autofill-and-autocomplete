@@ -42,3 +42,15 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextView.setThreshold(1);
     }
 }
+
+/*
+Note on Autofill: Some apps have the ability to fill in the edit texts of other apps and websites,
+and we can have only 1 default app that can does this at a time. Like 99% of the times, it's going
+to be a password manager. Android has explicitly stated in their documentation that if we are using
+this technology then most likely we are a password manager. But, the relevance that this has with
+any app that we build is that we should be able to work with this password manager smoothly so as to
+provide a good user experience. With the attribute for the view - android:autofillHints, we can tell
+this password manager app that we want what type of a value for this edit text for e.g. If the view
+is to fill up a username, then we set the value of this attribute as follows -
+android:autofillHints="AUTOFILL_HINT_USERNAME"
+*/
