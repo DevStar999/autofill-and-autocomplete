@@ -31,5 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Setting the adapter to our text view
         autoCompleteTextView.setAdapter(arrayAdapter);
+
+        /*
+        Setting suggestion threshold to 1 character, meaning now we will get matching suggestions
+        for autocomplete when user enters at least 1 character.
+        Side Note: We should be careful about this threshold value depending upon the list of
+        suggestions content that we have, we should pick a suitable value so that we don't show an
+        enormous list of suggestions which hampers the user experience
+        */
+        autoCompleteTextView.setThreshold(1);
     }
 }
