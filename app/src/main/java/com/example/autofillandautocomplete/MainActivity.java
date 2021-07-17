@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Getting access to our autocomplete text view
-        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
+        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.auto_complete_textview);
 
         // Creating some content for the text view
         List<String> narutoCharacters = new ArrayList<String>() {{

@@ -9,7 +9,7 @@
     android:padding="10dp">
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
+        android:id="@+id/auto_complete_textview"
         android:hint="Autocomplete"
         android:textSize="20sp"
         android:textColor="@color/black"
@@ -25,7 +25,7 @@
     <!-- The following view to is do a hands-on with auto fill
      framework -->
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextViewAutofill"
+        android:id="@+id/auto_complete_textview_autofill"
         android:hint="Autofill"
         android:textSize="20sp"
         android:textColor="@color/black"
@@ -35,7 +35,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
         android:autofillHints="AUTOFILL_HINT_USERNAME"
-        app:layout_constraintTop_toBottomOf="@id/autoCompleteTextView"
+        app:layout_constraintTop_toBottomOf="@id/auto_complete_textview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
