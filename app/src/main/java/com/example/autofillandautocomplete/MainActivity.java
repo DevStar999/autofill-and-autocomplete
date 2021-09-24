@@ -1,10 +1,10 @@
 package com.example.autofillandautocomplete;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Creating some content for the text view
         List<String> narutoCharacters = new ArrayList<String>() {{
-            add("Naruto"); add("Jiraiya"); add("Minato"); add("Rock Lee"); add("Sasuke");
-            add("Nina"); add("Noel"); add("Nire");
+            add("Naruto");
+            add("Jiraiya");
+            add("Minato");
+            add("Rock Lee");
+            add("Sasuke");
+            add("Nina");
+            add("Noel");
+            add("Nire");
         }};
 
         // Creating an ArrayAdapter for our text view

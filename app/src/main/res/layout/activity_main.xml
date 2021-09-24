@@ -5,38 +5,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".MainActivity">
 
     <AutoCompleteTextView
         android:id="@+id/auto_complete_textview"
-        android:hint="Autocomplete"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textAlignment="viewStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="Autocomplete"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- The following view to is do a hands-on with auto fill
      framework -->
     <AutoCompleteTextView
         android:id="@+id/auto_complete_textview_autofill"
-        android:hint="Autofill"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textAlignment="viewStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
         android:autofillHints="AUTOFILL_HINT_USERNAME"
-        app:layout_constraintTop_toBottomOf="@id/auto_complete_textview"
+        android:hint="Autofill"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/auto_complete_textview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
